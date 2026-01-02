@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temple Smart Crowd Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🛕 Temple Smart Crowd Management Dashboard</h1>
+
+    <div class="grid">
+
+        <div class="box">
+            <h3>Batch Number</h3>
+            <p id="batchNo">1</p>
+        </div>
+
+        <div class="box">
+            <h3>People Count</h3>
+            <p><span id="count">0</span> / 10</p>
+        </div>
+
+        <div class="box">
+            <h3>Crowd Status</h3>
+            <p id="crowdStatus" class="low">LOW</p>
+        </div>
+
+        <div class="box">
+            <h3>Darshan Timer</h3>
+            <p><span id="timer">--</span> sec</p>
+        </div>
+
+        <div class="box">
+            <h3>Entry Escalator</h3>
+            <p id="entryEsc">OFF</p>
+        </div>
+
+        <div class="box">
+            <h3>Exit Escalator</h3>
+            <p id="exitEsc">OFF</p>
+        </div>
+
+    </div>
+
+    <div class="control">
+        <button onclick="startSystem()">▶ Start System</button>
+    </div>
+
+    <div class="log">
+        <h3>📋 System Log</h3>
+        <ul id="logList"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
